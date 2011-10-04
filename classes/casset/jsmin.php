@@ -83,7 +83,7 @@ class Casset_JSMin {
 	 * @return string
 	 */
 	public static function minify($js) {
-		$jsmin = new JSMin($js);
+		$jsmin = new Casset_JSmin($js);
 		return $jsmin->min();
 	}
 
@@ -349,11 +349,11 @@ class Casset_JSMin {
 	}
 }
 
-class JSMin_UnterminatedStringException extends Exception {
+class JSMin_UnterminatedStringException extends Casset_Exception {
 }
 
-class JSMin_UnterminatedCommentException extends Exception {
+class JSMin_UnterminatedCommentException extends Casset_Exception {
 }
 
-class JSMin_UnterminatedRegExpException extends Exception {
+class JSMin_UnterminatedRegExpException extends Casset_Exception {
 }

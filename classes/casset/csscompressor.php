@@ -37,7 +37,7 @@ class Casset_Csscompressor {
 	 * @return string
 	 */
 	public static function process($css, $options = array()) {
-		$obj = new Minify_CSS_Compressor($options);
+		$obj = new Casset_Csscompressor($options);
 		return $obj->_process($css);
 	}
 
