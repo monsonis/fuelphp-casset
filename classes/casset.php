@@ -843,7 +843,7 @@ class Casset {
 				{
 					if ($inline)
 					{
-						$content = Casset_Cssurirewriter::rewrite(file_get_contents($file['file'], dirname($file['file'])));
+						$content = Casset_Cssurirewriter::rewrite(file_get_contents($file['file']), dirname($file['file']));
 						$ret .= html_tag('style', $attr, PHP_EOL.$content.PHP_EOL).PHP_EOL;
 					}
 					else
